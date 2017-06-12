@@ -1,0 +1,77 @@
+
+* {
+box-sizing: border-box;
+margin: 0 auto;
+}
+p {
+  font-size: xxlarge;
+}
+body {
+  font-size: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+
+.calculator {
+  border: 1px solid lightgrey;
+  height: 80vh;
+  width: 50vw;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: stretch;
+  align-items: stretch;
+  margin: 5% 0% 0% 0%;
+
+}
+
+.number, .clear, .equal, .decimal {
+  background-color: rgb(98, 178, 85);
+  color: white;
+  border: 1px solid lightgrey;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-basis: 25%;
+}
+
+
+.entry {
+  background-color: rgb(98, 178, 85);
+  color: white;
+  border: 1px solid lightgrey;
+  text-align: right;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  align-content: center;
+  flex-basis: 75%;
+  padding: 0% 15%;
+}
+
+.operator {
+  background-color: rgb(130, 193, 122);
+  color: black;
+  border: 1px solid lightgrey;
+  flex-basis: 25%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.operator:hover {
+  color: white;
+}
+
+.clear:hover, .equal:hover {
+  background-color: rgb(130, 193, 122);
+}
